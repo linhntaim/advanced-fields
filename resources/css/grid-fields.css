@@ -1,0 +1,113 @@
+:where(.fi-fo-field-grid .fi-fo-field-grid-table-ctn>:not(:last-child)) {
+    --tw-divide-y-reverse: 0;
+    border-bottom-style: var(--tw-border-style);
+    border-top-style: var(--tw-border-style);
+    border-top-width: calc(1px * var(--tw-divide-y-reverse));
+    border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-color: var(--gray-200)
+}
+
+:where(.fi-fo-field-grid .fi-fo-field-grid-table-ctn:where(.dark,.dark *)>:not(:last-child)) {
+    border-color: #ffffff1a
+}
+
+@supports (color: color-mix(in lab,red,red)) {
+    :where(.fi-fo-field-grid .fi-fo-field-grid-table-ctn:where(.dark,.dark *)>:not(:last-child)) {
+        border-color: color-mix(in oklab, var(--color-white) 10%, transparent)
+    }
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table {
+    table-layout: auto;
+    width: 100%
+}
+
+:where(.fi-fo-field-grid .fi-fo-field-grid-table>:not(:last-child)) {
+    --tw-divide-y-reverse: 0;
+    border-bottom-style: var(--tw-border-style);
+    border-top-style: var(--tw-border-style);
+    border-top-width: calc(1px * var(--tw-divide-y-reverse));
+    border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-color: var(--gray-200)
+}
+
+:where(.fi-fo-field-grid .fi-fo-field-grid-table:where(.dark,.dark *)>:not(:last-child)) {
+    border-color: #ffffff0d
+}
+
+@supports (color: color-mix(in lab,red,red)) {
+    :where(.fi-fo-field-grid .fi-fo-field-grid-table:where(.dark,.dark *)>:not(:last-child)) {
+        border-color: color-mix(in oklab, var(--color-white) 5%, transparent)
+    }
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table > thead > tr > th,
+.fi-fo-field-grid .fi-fo-field-grid-table > tbody > tr > th {
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 2);
+    text-align: start;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--gray-700)
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table > thead > tr > th {
+    text-align: center;
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table > tbody > tr > th {
+    width: auto;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table > thead > tr > th:where(.dark,.dark *),
+.fi-fo-field-grid .fi-fo-field-grid-table > tbody > tr > th:where(.dark,.dark *) {
+    color: var(--gray-200)
+}
+
+:where(.fi-fo-field-grid .fi-fo-field-grid-table>tbody>:not(:last-child)) {
+    --tw-divide-y-reverse: 0;
+    border-bottom-style: var(--tw-border-style);
+    border-top-style: var(--tw-border-style);
+    border-top-width: calc(1px * var(--tw-divide-y-reverse));
+    border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-color: var(--gray-200)
+}
+
+:where(.fi-fo-field-grid .fi-fo-field-grid-table>tbody:where(.dark,.dark *)>:not(:last-child)) {
+    border-color: #ffffff0d
+}
+
+@supports (color: color-mix(in lab,red,red)) {
+    :where(.fi-fo-field-grid .fi-fo-field-grid-table>tbody:where(.dark,.dark *)>:not(:last-child)) {
+        border-color: color-mix(in oklab, var(--color-white) 5%, transparent)
+    }
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table > tbody > tr > td {
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 2);
+    width: 100px;
+    min-width: 50px;
+    border: none;
+    text-align: center;
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table > tbody > tr > td > input {
+    vertical-align: middle;
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table .fi-fo-field-grid-disabled {
+    color: var(--gray-300);
+}
+
+.fi-fo-field-grid .fi-fo-field-grid-table .fi-fo-field-grid-disabled:where(.dark,.dark *) {
+    color: var(--gray-500);
+}
+
+.fi-fo-field-grid-clear-btn-ctn {
+    text-align: right;
+}

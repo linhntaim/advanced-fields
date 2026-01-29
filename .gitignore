@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+/node_modules
+/vendor
+composer.lock

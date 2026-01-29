@@ -1,0 +1,47 @@
+{
+    "name": "linhntaim/advanced-fields",
+    "description": "Advanced fields for Form Builders of Filament.",
+    "keywords": [
+        "radio",
+        "checkbox",
+        "field",
+        "grid",
+        "component",
+        "form",
+        "filament",
+        "laravel"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/linhntaim/advanced-fields",
+    "support": {
+        "issues": "https://github.com/linhntaim/advanced-fields/issues",
+        "source": "https://github.com/linhntaim/advanced-fields"
+    },
+    "authors": [
+        {
+            "name": "Nguyen Tuan Linh",
+            "email": "linhnt.aim@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/forms": "^4.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LinhntAim\\AdvancedFields\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LinhntAim\\AdvancedFields\\AdvancedFieldsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
