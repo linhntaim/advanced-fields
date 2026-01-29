@@ -23,17 +23,24 @@ php artisan vendor:publish --tag="advanced-fields-views"
 
 ### Grid Fields
 
+Currently, supports: `RadioGrid`, `CheckboxGrid`.
+
 ```php
+use Filament\Schemas\Schema;
 use LinhntAim\AdvancedFields\RadioGrid;
 use LinhntAim\AdvancedFields\CheckboxGrid;
 
 public function mount() {
     $this->form->fill([
+
+        // format of the state used for RadioGrid
         'filled_radio_grid' => [
             'row_1' => 'column_c',
             'row_2' => 'column_b',
             'row_3' => 'column_a',
         ],
+
+        // format of the state used for CheckboxGrid
         'filled_checkbox_grid' => [
             'row_1' => [
                 'column_c',
@@ -48,12 +55,16 @@ public function mount() {
                 'column_b',
             ],
         ],
+
     ]);
 }
 
 public function form(Schema $schema): Schema
 {
     return $schema->components([
+
+        ...,
+
         RadioGrid::make('radio_grid')
             ->options([
                 'column_a' => 'Column A',
@@ -72,9 +83,9 @@ public function form(Schema $schema): Schema
             // optionally, set the label of the "Clear selection" button
             // - note: the button will be shown after checking any radio if not required
             ->clearButtonLabel('X'),
-        
+
         ...,
-        
+
         CheckboxGrid::make('checkbox_grid')
             ->options([
                 'column_a' => 'Column A',
@@ -90,9 +101,9 @@ public function form(Schema $schema): Schema
             ->required()
             // optionally, disable specific column option(s)
             ->disableOptionWhen(fn($value) => $value == 'column_b'),
-        
+
         ...,
-        
+
     ]);
 }
 
