@@ -30,7 +30,8 @@ use Filament\Schemas\Schema;
 use LinhntAim\AdvancedFields\RadioGrid;
 use LinhntAim\AdvancedFields\CheckboxGrid;
 
-public function mount() {
+public function mount(): void
+{
     $this->form->fill([
 
         // format of the state used for RadioGrid

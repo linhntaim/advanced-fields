@@ -10,12 +10,12 @@
     $rows = $getRows();
 @endphp
 
-<x-dynamic-component
-    :component="$fieldWrapperView"
-    :field="$field"
-    class="fi-fo-field-grid-wrp"
->
-    <div x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('grid-fields', package: 'linhntaim/advanced-fields'))]">
+<div x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('grid-fields', package: 'linhntaim/advanced-fields'))]">
+    <x-dynamic-component
+        :component="$fieldWrapperView"
+        :field="$field"
+        class="fi-fo-field-grid-wrp"
+    >
         <x-filament::input.wrapper
             :disabled="$isDisabled"
             :valid="! $errors->has($statePath) && ! $errors->has($statePath . '*')"
@@ -70,5 +70,5 @@
                 </table>
             </div>
         </x-filament::input.wrapper>
-    </div>
-</x-dynamic-component>
+    </x-dynamic-component>
+</div>
