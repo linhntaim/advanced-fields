@@ -1,11 +1,15 @@
 {
     "name": "linhntaim/advanced-fields",
-    "description": "Advanced fields for Form Builders of Filament.",
+    "description": "Advanced Fields for Filament's Form Builders.",
     "keywords": [
+        "multiple-choice",
         "radio",
         "checkbox",
-        "field",
         "grid",
+        "multiple-choice-grid",
+        "radio-grid",
+        "checkbox-grid",
+        "field",
         "component",
         "form",
         "filament",

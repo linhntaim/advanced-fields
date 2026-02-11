@@ -17,6 +17,10 @@
     }
 }
 
+.fi-fo-field-grid-table-ctn {
+    overflow-x: auto;
+}
+
 .fi-fo-field-grid .fi-fo-field-grid-table {
     table-layout: auto;
     width: 100%

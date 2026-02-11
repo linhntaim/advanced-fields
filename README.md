@@ -1,9 +1,9 @@
-# Advanced fields for Form Builders of Filament
+# Advanced Fields for Filament's Form Builders
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/linhntaim/advanced-fields.svg?style=flat-square)](https://packagist.org/packages/linhntaim/advanced-fields)
 [![Total Downloads](https://img.shields.io/packagist/dt/linhntaim/advanced-fields.svg?style=flat-square)](https://packagist.org/packages/linhntaim/advanced-fields)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Multiple Choice Grid/Radio Grid, Checkbox Grid, ... and more.
 
 ## Installation
 
@@ -23,7 +23,7 @@ php artisan vendor:publish --tag="advanced-fields-views"
 
 ### Grid Fields
 
-Currently, supports: `RadioGrid`, `CheckboxGrid`.
+Supports: `RadioGrid`, `CheckboxGrid`.
 
 ```php
 use Filament\Schemas\Schema;
